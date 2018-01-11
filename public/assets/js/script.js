@@ -139,7 +139,7 @@ XHR.POST = function(path, callback) {
 }
 
 XHR.GET = function(path, callback) {
-  this.xhttp.open("GET", Config.getUrl() + path + '/' + Store.objectId, true);
+  this.xhttp.open("GET", Config.getUrl() + path + '/', true);
   this.xhttp.setRequestHeader("X-Parse-Application-Id", "myAppId");
   this.xhttp.setRequestHeader("Content-type", "application/json");
   this.xhttp.send(null);
